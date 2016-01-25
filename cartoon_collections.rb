@@ -1,8 +1,8 @@
 require 'pry'
 
 def roll_call_dwarves(collection)# code an argument here
-  collection.each_with_index {|dwarf, index| 
-  	puts "#{index+1}. #{dwarf}"}
+  collection.each.with_index(1) {|dwarf, index| 
+  	puts "#{index}. #{dwarf}"}
 end
 
 def summon_captain_planet(collection)
@@ -10,16 +10,13 @@ def summon_captain_planet(collection)
 end
 
 def long_planeteer_calls(calls)
-	return true if calls.any?{|call| call.length > 4}
-	!calls.all?{|call| call.length < 5}
+	calls.any?{|call| call.length > 4}
 end
 
 def find_the_cheese(collection)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each{|cheese|
-  	return cheese if collection.include?(cheese)
-  }
-  return nil
+  collection.find do |item|
+  	cheese_types.include?(item)
+  end
 end
 
-long_planeteer_calls(["earth", "fire"])
