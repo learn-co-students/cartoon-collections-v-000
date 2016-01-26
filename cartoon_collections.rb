@@ -23,13 +23,8 @@ end
 def find_the_cheese(items)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  found = []
-  cheese_types.each do |type|
-    found << type if items.include?(type)
-  end
-  if found.join == ""
-    return nil
-  else
-    found.join
+  cheeses = %w(cheddar gouda comembert)
+  items.find do |item|
+    cheeses.include?(item)
   end
 end
