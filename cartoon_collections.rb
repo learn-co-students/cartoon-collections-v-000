@@ -17,6 +17,6 @@ end
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
     
-    array.find{|name| name.include?("cheddar")}
+    array.find{|name| name.include?("cheddar") || name.include?("gouda") || name.include?("camembert")}
     
 end
