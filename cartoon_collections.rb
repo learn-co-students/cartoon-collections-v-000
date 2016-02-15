@@ -16,13 +16,7 @@ end
 
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
-  i=0
- while i<array.length
-if array.include?("cheddar") || array.include?("gouda") || array.include?("camembert")
-    i+=1
-  return array[i] 
-else
-return nil
- end
-end
+    
+    array.find{|name| name.include?("cheddar")}
+    
 end
