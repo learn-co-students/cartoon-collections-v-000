@@ -17,9 +17,13 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(snacks)
-  snacks.each do |snack|
-    break unless snack == "cheddar" || snack == "gouda" || snack == "camembert"
-    end
+  if snacks.include?("cheddar")
+    return "cheddar"
+  elsif snacks.include?("gouda")
+    return "gouda"  
+  elsif snacks.include?("camembert")
+    return "camembert"
   end
 end
+
 
