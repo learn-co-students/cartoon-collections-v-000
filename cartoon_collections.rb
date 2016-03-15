@@ -1,9 +1,13 @@
 def roll_call_dwarves# code an argument here
-  # Your code here
+  arr = ["Doc", "Dopey", "Bashful", "Grumpy"]
+  arr.each.with_index do |dwarves|
+    puts "#{dwarves}"
+  end
 end
 
 def summon_captain_planet# code an argument here
-  # Your code here
+ planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
+ planeteer_calls.collect { |planeteer| puts planeteer + "!"}
 end
 
 def long_planeteer_calls# code an argument here
