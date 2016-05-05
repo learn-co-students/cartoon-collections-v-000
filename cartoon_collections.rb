@@ -13,7 +13,12 @@ def long_planeteer_calls(words)
 end
 
 def find_the_cheese(words)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  words.join.find {|x| x.include?(cheese_types)}
+  cheeses = ["cheddar", "gouda", "camembert"]
+  words.detect {|x| (cheeses).include? x}
 end
+
+
+
+
+
 
