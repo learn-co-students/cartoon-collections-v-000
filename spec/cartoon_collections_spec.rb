@@ -37,18 +37,18 @@ describe "Cartoon Collections" do
       ["Carrot!", "Cucumber!", "Pepper!"].each { |w| expect(result).to include w }
     end
   end
-  
-  describe "#long_planteer_calls" do 
-    it "returns true if any calls are longer than 4 characters" do 
-      long_planeteer_calls = ["earth", "wind", "fire", "water", "heart"] 
-      expect(long_planeteer_calls(long_planeteer_calls)).to eq(true) 
-    end 
-    
-    it "returns false if all calls are shorter than 4 characters" do 
-    short_planeteer_calls = ["wind", "fire"] 
-    expect(long_planeteer_calls(short_planeteer_calls)).to eq(false) 
+
+  describe "#long_planeteer_calls" do
+    it "returns true if any calls are longer than 4 characters" do
+      long_planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
+      expect(long_planeteer_calls(long_planeteer_calls)).to eq(true)
     end
-    
+
+    it "returns false if all calls are shorter than 4 characters" do
+    short_planeteer_calls = ["wind", "fire"]
+    expect(long_planeteer_calls(short_planeteer_calls)).to eq(false)
+    end
+
   end
 
   describe "#find_the_cheese" do
@@ -57,7 +57,7 @@ describe "Cartoon Collections" do
       expect(find_the_cheese(cheddar_cheese)).to eq 'cheddar'
     end
 
-    it "returns nill if the array does not contain a type of cheese" do
+    it "returns nil if the array does not contain a type of cheese" do
       no_cheese = ["ham", "cellphone", "computer"]
       expect(find_the_cheese(no_cheese)).to eq nil
     end
