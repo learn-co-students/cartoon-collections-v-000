@@ -5,14 +5,23 @@ def roll_call_dwarves(array)
 end
 
 def summon_captain_planet(array)
-  array.collect { | element | element + ! }
+  array.map do | element |
+     element.capitalize + "!"  #adds an exclamation to each element in the array
+   end
 end
 
+
 def long_planeteer_calls(array)
-  # Your code here
+  array.any? do | characters |
+    if characters.length > 4
+      true
+    elsif array.all?
+      false
+    end
+  end
 end
 
 def find_the_cheese(array)
-  # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  array.find { |elements| cheese_types.include?(elements) } #'.find' allows you to get the first element that matches ('.include?')
 end
