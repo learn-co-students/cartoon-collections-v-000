@@ -11,12 +11,8 @@ def summon_captain_planet(collection)
 end
 
 def long_planeteer_calls(collection)
-  collection.find do |item|
-  	if item.length > 4
-  		return true
-  	else
-  		return false
-  	end
+  collection.any? do |item|
+  	item.length > 4
   end
 end
 
