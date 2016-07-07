@@ -15,5 +15,5 @@ end
 
 def find_the_cheese(strings)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
-  strings.find { |list| list == "cheddar" || list == "gouda" || list == "camembert" }
+  strings.find { |list| cheese_types.include?(list) } # or you could also write   strings.find { |list| list == "cheddar" || list == "gouda" || list == "camembert" } However this is a more inefficient way to write code
 end
