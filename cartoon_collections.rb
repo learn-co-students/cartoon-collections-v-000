@@ -1,26 +1,24 @@
 def roll_call_dwarves(names)
-   array2 = []
   names.each_with_index do |dwarf_name, index|
-    puts "#{index} #{dwarf_name}"# code an argument here
-    end# Your code here
-    array2 << names
-end
-
-def summon_captain_planet(arg)
-planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
-arg = planeteer_calls
-  #It should then capitalize each element
-  #and add an exclamation point at the end.
-  arg.map do |x|
-
+    puts "#{index +1}.* #{dwarf_name}"
   end
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def summon_captain_planet(arg)
+  arg.map do |words|
+    words.capitalize + "!"
+  end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def long_planeteer_calls(words)
+    if words.length > 4 then true
+    else
+      false
+    end
+end
+
+def find_the_cheese(arg)
   cheese_types = ["cheddar", "gouda", "camembert"]
+    arg.find do |food| cheese_types.include?(food)
+  end
 end
