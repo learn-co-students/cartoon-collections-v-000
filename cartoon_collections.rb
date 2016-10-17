@@ -1,21 +1,24 @@
 def roll_call_dwarves(dwarves)
-    number = 1
-    dwarves.each do |name|
-    puts "#{number}. #{name}"
-    number += 1
-    end
+  dwarves.each.with_index(1) do |dwarf, index|
+    puts "#{index}. #{dwarf}"
+  end
 end
 
-def summon_captain_planet(elements)
-	elements.map! {|x| x.capitalize + "!" }
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.map do |call|
+    call.capitalize! + "!"
+  end
 end
 
 def long_planeteer_calls(words)
-	words.any? { |word| word.length > 4 }
+  words.any? do |word|
+    word.length > 4
+  end
 end
 
-def find_the_cheese(snacks)
-    cheese_types = ["cheddar", "gouda", "camembert"]
-    snacks.find { |snack| cheese_types.include?(snack) }
+def find_the_cheese(food)
+  cheeses = ["cheddar", "gouda", "camembert"]
+  food.find do |maybe_cheese|
+    cheeses.include?(maybe_cheese)
+  end
 end
-
