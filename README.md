@@ -111,5 +111,3 @@ You can assume that all strings will be lowercase. Take a look at the [`.include
 * The [`.each_with_index` method](http://ruby-doc.org/core/Enumerable.html#method-i-each_with_index)
 * The [`.map` method](http://ruby-doc.org/core/Array.html#method-i-map)
 * The [`.include` method](http://ruby-doc.org/core/Array.html#method-i-include-3F)
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cartoon-collections' title='Cartoon Collections'>Cartoon Collections</a> on Learn.co and start learning to code for free.</p>
