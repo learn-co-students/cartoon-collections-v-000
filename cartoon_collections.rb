@@ -24,17 +24,18 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.any?{|call| call.length >4}
 end
 
-#def find_the_cheese(snacks)
-#  cheese_types = ["cheddar", "gouda", "camembert"]
-#  snacks.detect{|snack| snack = cheese_types}
-
-#end
-
 def find_the_cheese(snacks)
-cheese_types = ["cheddar", "gouda", "camembert"]
-if cheese_types.include?(snacks)
-  return snacks
-else
-  return nil
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  snacks.detect{|snack| cheese_types.include? snack}
+
 end
-end
+
+#def find_the_cheese(snacks)
+#cheese_types = ["cheddar", "gouda", "camembert"]
+#if cheese_types.include?(snacks)
+#  snacks.detect{|snack|}
+#  return snack
+#else
+#  return nil
+#end
+#end
