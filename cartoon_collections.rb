@@ -2,9 +2,9 @@ require 'pry'
 def roll_call_dwarves (dwarves)# code an argument here
   i = 0 #starts counter
     dwarves.each_with_index do |item, index|
-      #binding.pry
-    	puts "#{dwarves[index]+1}. #{item}" 
       binding.pry
+    	puts "#{index + 1}. #{item}" 
+      #binding.pry
     end
 end
 
