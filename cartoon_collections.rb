@@ -12,13 +12,17 @@ end
 
 def long_planeteer_calls(calls)# code an argument here
 
-  !calls.all? { |words| words
-    if words.length <= 4}
+  !calls.all? { |words| words if words.length <= 4}
 
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(cheese)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  
+
+  #cheese = array of cheeses, use .find to search through 'cheese' to find if 'cheese' includes any 'cheese_types'
+
+  cheese.detect{|i| cheese_types.include?(i)}
+
+
 end
