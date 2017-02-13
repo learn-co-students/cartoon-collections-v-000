@@ -1,16 +1,30 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(collection)
+  return puts collection.each_with_index { |val, index| puts "#{index + 1}. #{val}"}
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(collection)
+  collection.map { |e| "#{e.capitalize}!" }
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(collection)
+    if collection.all? {|e| e.length <= 4}
+      false
+    else
+      true
+    end
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(collection)
   # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+  i = 0
+  while i < collection.length
+    cheese_types = ["cheddar", "gouda", "camembert"]
+    collection.each do |e|
+    value = cheese_types.include?(e)
+    if value == true
+      return e
+    end
+    i+=1
+    end
+  end
 end
