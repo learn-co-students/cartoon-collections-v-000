@@ -24,3 +24,16 @@ def find_the_cheese(array)
     cheese[0]
   end
 end
+
+=begin
+Refactored code for #find_the_cheese
+
+def find_the_cheese(list_items)
+  cheeses = ["cheddar", "gouda", "camembert"]
+  found = []
+  list_items.each do |item|
+    found << item if cheeses.include?(item)
+  end
+  found[0]
+end
+=end
