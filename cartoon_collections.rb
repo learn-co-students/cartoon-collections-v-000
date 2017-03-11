@@ -27,4 +27,3 @@ def find_the_cheese(ingredients)
  end
  food[0]
 end
-# if cheese_types.find {|name| name.include?("cheddar")}
