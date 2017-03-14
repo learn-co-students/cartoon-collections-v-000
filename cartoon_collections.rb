@@ -1,8 +1,18 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(dwarves)
+  i = 0
+  while i < dwarves.length
+    puts dwarves.each_with_index(i)
+  end
+  i += 1
 end
 
-def summon_captain_planet# code an argument here
+
+hash = Hash.new
+%w(cat dog wombat).each_with_index { |item, index|
+  hash[item] = index
+
+
+def summon_captain_planet(planets)
   # Your code here
 end
 
