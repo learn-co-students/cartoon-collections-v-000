@@ -12,14 +12,10 @@ def long_planeteer_calls(calls)
   calls.any? {|call| call.length > 4}
 end
 
-def find_the_cheese(cheeses)
+def find_the_cheese(potential_cheeses)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each_with_index {|cheese, i|
-    if cheeses.include?(cheese)
-      return cheese_types[i]
-    elsif !(cheeses.include?(cheese))
-      return nil
-    end
-  }
+  potential_cheeses.find do |potential_cheese|
+    cheese_types.include?(potential_cheese)
+  end
 end
