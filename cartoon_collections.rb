@@ -1,15 +1,15 @@
 def roll_call_dwarves(dwarves)
-	dwarves.each_with_index do |dwarve, idx|
-		puts "#{idx + 1}. #{dwarve}"
+	dwarves.each_with_index do |dwarf, idx|
+		puts "#{idx + 1}. #{dwarf}"
 	end
 end
 
 def summon_captain_planet(collection)
-	collection.map { |el| "#{el.capitalize}!"}
+	collection.map { |call| "#{call.capitalize}!"}
 end
 
 def long_planeteer_calls(collection)
-	collection.any? { |el| el.length > 4 }
+	collection.any? { |word| word.length > 4 }
 end
 
 def find_the_cheese(collection)
