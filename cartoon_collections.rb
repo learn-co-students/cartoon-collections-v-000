@@ -32,6 +32,6 @@ def find_the_cheese(strings)
 
   cheeses = ["camembert","gouda","cheddar"]
 
-  strings.find {|string| cheeses.include?(string)}
+  strings.find {|string| cheeses.include?(string)} #iterate through strings, check if current string is included in the cheeses array
 
 end
