@@ -9,26 +9,13 @@ def summon_captain_planet(element)
 end
 
 def long_planeteer_calls(call)
-  if call.count > 3
-    true
-  else
-    false
-  end
+   all.any? { |x| x.length > 4 }
 end
 
-def find_the_cheese(array)# code an argument here
+def find_the_cheese(potentially_cheesy_items)
+  cheeses = %w(gouda cheddar camembert)
 
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  if array.include?(cheese_types[0])
-    return cheese_types[0]
-  elsif array.include?(cheese_types[1])
-    return cheese_types[1]
-  elsif array.include?(cheese_types[2])
-    return cheese_types[2]
-  else
-    nil
-
+  potentially_cheesy_items.find do |maybe_cheese|
+    cheeses.include?(maybe_cheese)
   end
-
-
 end
