@@ -5,8 +5,7 @@ def roll_call_dwarves(list)
 end
 
 def summon_captain_planet(call_list)
-   call_list.collect { |call| 
-   "#{call.capitalize}!"
+   call_list.collect { |call| "#{call.capitalize}!"
   }
 end
 
@@ -15,14 +14,17 @@ def long_planeteer_calls(call_list)
 end
 
 def find_the_cheese(list)
-
   cheese_types = ["cheddar", "gouda", "camembert"]
-  match = nil
-  list.each { |list_item|
-    if cheese_types.include?(list_item)
-      match = list_item
-      return match
-    end
+
+  list.find{ |list_item|
+    cheese_types.include?(list_item)
   }
-  match
+  # match = nil
+  # list.each { |list_item|
+  #   if cheese_types.include?(list_item)
+  #     match = list_item
+  #     return match
+  #   end
+  # }
+  # match
 end
