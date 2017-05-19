@@ -19,12 +19,4 @@ def find_the_cheese(list)
   list.find{ |list_item|
     cheese_types.include?(list_item)
   }
-  # match = nil
-  # list.each { |list_item|
-  #   if cheese_types.include?(list_item)
-  #     match = list_item
-  #     return match
-  #   end
-  # }
-  # match
 end
