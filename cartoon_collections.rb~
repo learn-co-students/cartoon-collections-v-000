@@ -23,3 +23,6 @@ def find_the_cheese (arr) # code an argument here
   arr.find { |element| cheese_types.include?(element) }
 end
 
+snacks = ["crackers", "gouda", "thyme"]
+# need to put 'puts' in front of # to have it output info
+puts find_the_cheese(snacks)
