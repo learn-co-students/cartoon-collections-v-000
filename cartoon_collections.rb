@@ -17,9 +17,12 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_the_cheese(recipe)
-  cheese_types = ["cheddar", "gouda", "camembert"].join(" ")
-  binding.pry
+  cheese_types = ["cheddar", "gouda", "camembert"]
   recipe.detect do |ingredient|
-    ingredient.include?(cheese_types)
+    cheese_types.include?(ingredient)
+    #binding.pry
+
   end
 end
+
+find_the_cheese(["biskets", "cheddar"])
