@@ -13,5 +13,5 @@ end
 
 def find_the_cheese(word_list)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  word_list.find{|word| word == cheese_types[0] || word == cheese_types[1] || word == cheese_types[2]}
+  word_list.find{|word| cheese_types.include?(word)}
 end
