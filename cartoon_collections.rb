@@ -6,12 +6,10 @@ def roll_call_dwarves(names)
   end
 end
 
-def summon_captain_planet(veggies)# code an argument here
-  # Your code here
-  
+def summon_captain_planet(veggies)
   veggies.map { |e| e.capitalize + "!" }
 end
-short_words = ["puff", "go", "two"]
+
 def long_planeteer_calls(short_words)
   short_words.find do |e|
     return true if e.size > 4
