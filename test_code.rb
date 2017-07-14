@@ -16,3 +16,21 @@ require "pry"
   end
    cheese = false
  end
+
+
+ cheese_types = ["cheddar", "gouda", "camembert"]
+ cheese_array = []
+ i = array.length
+ array.map {|cheese| cheese_array.push(array.include?(""))}
+   #binding.pry
+   cheese_array
+
+   case cheese
+   when cheese.include?("cheddar")
+     cheese
+   when cheese.include?("gouda")
+     cheese
+   when cheese.include?("camembert")
+     cheese
+   else
+   false
