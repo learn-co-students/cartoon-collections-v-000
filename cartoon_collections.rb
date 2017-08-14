@@ -10,12 +10,18 @@ def long_planeteer_calls(calls)
   calls.any?{|call| call.length > 4}
 end
 
+#my attempt
 def find_the_cheese(ingredients)
-  # the array below is here to help
-  ingredients.detect{|ingredient| ingredient == "cheddar" || ingredient == "gouda" || ingredient =="camebert"}
+  ingredients.find{|ingredient| ingredient == "cheddar" || ingredient == "gouda" || ingredient =="camebert"}
 end
 
-
+#refactored
+def find_the_cheese(ingredients)
+  cheeses = ["gouda", "cheddar", "camembert"]
+  ingredients.find do |ingredient|
+    cheeses.include?(ingredient)
+  end
+end
 # dwarves = ['Doc','Grumpy','Happy','Sleepy','Dopey','Bashful','Sneezy']
 # roll_call_dwarves(dwarves)
 
