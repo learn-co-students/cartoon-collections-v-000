@@ -16,17 +16,15 @@ end
 def long_planeteer_calls(calls)# code an argument here
   i = 0
   new_array = []
-  while i < calls.length
-    if calls[i].length > 4
-      new_array.push << "true"
-    else
-      new_array.push << "false"
-    end
-    i += 1
+
+  calls.find do |call|
+    new_array << call if call.length > 4
   end
-
-  new_array.include?("true") ? true : false
-
+  if new_array == []
+    false
+  else
+    true
+  end
 end
 
 def find_the_cheese(cheese)# code an argument here
