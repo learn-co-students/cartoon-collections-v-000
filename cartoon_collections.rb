@@ -33,20 +33,14 @@ def find_the_cheese(cheese)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   i = 0
   new_array = []
-  individual_cheese = ""
 
-  while i < cheese.length
-    if cheese_types.include?(cheese[i])
-      individual_cheese = cheese[i]
-      return individual_cheese
+  cheese.find do |individual_cheese|
+    new_array.push(individual_cheese) if cheese_types.include?(individual_cheese)
+  end
+
+    if new_array == []
+      nil
     else
-      individual_cheese = "false"
+       new_array.join
     end
-    i += 1
-  end
-  if individual_cheese != "false"
-    return individual_cheese
-  else
-    nil
-  end
 end
