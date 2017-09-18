@@ -18,8 +18,19 @@ def long_planeteer_calls(calls_array)# code an argument here
   false
 end
 
+# Flatiron Solution:
+# def long_planeteer_calls(planeteer_calls)
+    #planeteer_calls.any? { |call| call.length > 4 }
+#end
+
 def find_the_cheese(food_array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  food_array.detect { |i| i.include?("cheddar" || "gouda" || "camebert") } # this is all I used
+  # below is all I used to pass, but I see how it is not abstract
+  # food_array.detect { |i| i.include?("cheddar" || "gouda" || "camembert") }
+  # Flatiron Solution:
+  food_array.find do | maybe_cheese |
+    cheese_types.include?(maybe_cheese)
+    # I guess I see why it works.  I have a hard time with the logic, though...
+  end
 end
