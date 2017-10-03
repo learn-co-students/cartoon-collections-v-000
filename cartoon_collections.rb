@@ -1,9 +1,8 @@
 def roll_call_dwarves(array)# code an argument here
   # Your code here
-  n = 1
   array.each_with_index do |name, index|
-    puts "#{n} *#{array[index]}/"
-    n += 1
+    n = index + 1
+    puts "#{n} *#{name}/"
   end
 end
 
@@ -17,25 +16,16 @@ end
 
 def long_planeteer_calls(array)# code an argument here
   # Your code here
-  tenary = nil
-  array.each do |call|
-    if call.size < 5
-      tenary = false
-    else
-      tenary = true
-    end
+  array.any? do |call|
+    call.size > 4
   end
-  tenary
 end
 
 
 def find_the_cheese(array)# code an argument here
   # the array below is here to help
-  index = 0
-  while index < array.length
-    if array[index] == "cheddar" || array[index] == "gouda" || array[index] == "camembert"
-      return array[index]
-    end
-    index += 1
+  cheese_types = ["cheddar", "gouda", "camembert"]
+  array.detect do |cheese|
+    cheese_types.include?(cheese)
   end
 end
