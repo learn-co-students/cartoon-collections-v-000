@@ -1,5 +1,3 @@
-require 'pry'
-
 def roll_call_dwarves(dwarf_array)
   dwarf_array.each.with_index(1) do |name, index|
     puts "#{index}. #{name}"
