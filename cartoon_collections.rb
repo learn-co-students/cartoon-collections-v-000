@@ -20,12 +20,19 @@ def long_planeteer_calls(input_array)# code an argument here
   input_array.map do |element|
     if element.size > 4
       output = true
-
+    end
   end
   output
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(input_array)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  input_array.find do |element|
+    cheese_types.include?(element)
+  end
+
+
+
+
 end
