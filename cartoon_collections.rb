@@ -1,7 +1,12 @@
 def roll_call_dwarves(dwarves)# code an argument here
   # Your code here
-  dwarves.each_with_index do |dwarf, i|
-    puts "#{i + 1} #{dwarf}"
+
+  # dwarves.each_with_index do |dwarf, i|
+  #   puts "#{i + 1}. #{dwarf}"
+  # end
+
+  dwarves.each.with_index(1) do |dwarf, i|
+    puts "#{i}. #{dwarf}"
   end
 end
 
@@ -20,11 +25,16 @@ end
 def find_the_cheese(strings)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  string_return = []
-  strings.each_with_index do |string, i |
-    if cheese_types.include?(string)
-      string_return << string
-    end
+
+  # string_return = []
+  # strings.find do |string|
+  #   if cheese_types.include?(string)
+  #     string_return << string
+  #   end
+  # end
+  # string_return[0]
+
+  strings.find do |string|
+    cheese_types.include?(string)
   end
-  string_return[0]
 end
