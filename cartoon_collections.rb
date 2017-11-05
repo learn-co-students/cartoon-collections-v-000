@@ -5,7 +5,11 @@ def roll_call_dwarves(dwarves)
 end
 
 def summon_captain_planet(planeteer_calls)
+<<<<<<< HEAD
 planeteer_calls.collect { |x| x.capitalize + "!" }
+=======
+planeteer_calls.collect { |x| x.capitalize + "!" } 
+>>>>>>> 4dd8b7910e65cd5cb863602ff496a93d912fc746
 end
 
 def long_planeteer_calls(calls)
@@ -15,7 +19,11 @@ def long_planeteer_calls(calls)
    assorted_words << yield(calls[i])
     i = i + 1
   end
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 4dd8b7910e65cd5cb863602ff496a93d912fc746
   if assorted_words.include?(true)
      true
   else
@@ -28,10 +36,18 @@ def find_the_cheese(cheese_types)
     yield(cheese_types[i])
     i = i + 1
   end
+<<<<<<< HEAD
 
   if cheese_types.include?
      cheese_types
   else
     nil
+=======
+ 
+  if cheese_types.include?
+     cheese_types
+  else
+    nil  
+>>>>>>> 4dd8b7910e65cd5cb863602ff496a93d912fc746
   # cheese_types = ["cheddar", "gouda", "camembert"]
 end
