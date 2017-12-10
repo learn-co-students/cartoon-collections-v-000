@@ -29,7 +29,7 @@ def find_the_cheese(ingredients)# code an argument here
       #return ingredient
     #end
   #end
-  items = ingredients & cheese_types
-
-  items[0]
+  #items = ingredients & cheese_types
+  (ingredients & cheese_types).first
+  #items[0]
 end
