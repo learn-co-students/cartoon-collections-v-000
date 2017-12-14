@@ -16,12 +16,7 @@ def long_planeteer_calls(short_words)
   end
 end
 
-def find_the_cheese(cheese) #need to return the name of the chees that evaluates true.
+def find_the_cheese(cheese)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese.include?(cheese_types)
-  if true
-    return cheese
-  else
-    return nil
-  end
+  cheese.find {|i| cheese_types.include?("#{i}")}
 end
