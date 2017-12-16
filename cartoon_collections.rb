@@ -1,6 +1,15 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+
+require 'pry'
+
+  dwarves = ["Dopey", "Grumpy", "Bashful", "Feodor"]
+def roll_call_dwarves(dwarves)
+  elves.each_with_index(1) do |number, dwarves|
+    puts "#{number}. #{dwarves}"
+    binding.pry
+  end
 end
+
+
 
 def summon_captain_planet# code an argument here
   # Your code here
