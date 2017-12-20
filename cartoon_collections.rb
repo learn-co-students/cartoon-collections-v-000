@@ -17,9 +17,15 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(recipe)
-  if recipe.include?("cheddar", "gouda", "camembert")
-    recipe
-  else
-    nil
+  #cheeses = ["cheddar", "gouda", "camembert"]
+  #"cheddar" || "gouda" || "camembert"
+    if recipe.include?("cheddar")
+      return "cheddar"
+    elsif recipe.include?("gouda")
+      return "gouda"
+    elsif recipe.include?("camembert")
+      return "camembert"
+    else
+      nil
+    end
   end
-end
