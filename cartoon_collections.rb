@@ -15,14 +15,6 @@ end
 
 def find_the_cheese(strings)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0
-  while i < cheese_types.length
-    if strings.include?(cheese_types[i])
-      cheese_types[i]
-      break
-    else
-      nil
-    end
-    i += 1
-  end
+  common = strings & cheese_types
+  common[0]
 end
