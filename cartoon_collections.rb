@@ -5,35 +5,17 @@ def roll_call_dwarves(names)# code an argument here
 end
 
 def summon_captain_planet(planeteer_calls)# code an argument here
-all_calls = []
-  planeteer_calls.each do |call|
-    split_call = call.split("")
-    first_letter = split_call[0]
-    split_call[0] = first_letter.upcase!
-    split_call << "!"
-    all_calls << split_call.join
-    p all_calls
-  end
-  all_calls
+  planeteer_calls.map {|call| call.capitalize + "!"}
 end
 
 def long_planeteer_calls(calls)# code an argument here
-  long_words = calls.count { |word| word.length > 4 }
-  p long_words
-  if long_words > 0
-    return true
-  else
-    return false
-  end
+  calls.any? {|call| call.length > 4}
 end
 
 def find_the_cheese(snacks)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each do |cheese|
-    if snacks.include?(cheese)
-      return cheese
-    end
+  snacks.find do |couldbe_cheese|
+    cheese_types.include?(couldbe_cheese)
   end
-  nil 
 end
