@@ -2,7 +2,7 @@
 dwarves  = ["Doc", "Dopey", "Bashful", "Grumpy"]
 planeteer_array  = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
 short_words = ["puff", "go", "two"]
-ingredients = ["garlic", "rosemary", "bread"]
+ingredients = ["garlic", "cheddar", "rosemary", "gouda", "bread"]
 
 
 def roll_call_dwarves(dwarves)
@@ -35,20 +35,13 @@ def find_the_cheese(ingredients)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese_found = nil
-  ingredients.collect do |element| cheese_types.each_with_index do |cheese, i |
-  #  puts "cheese%%%% = #{cheese}"
-  #  puts "element%%%% = #{element}"
-  #                                      if element = cheese
-  #                                          return cheese_found =cheese
-  #
-  #                                      else
-  #                                        puts "cheese = #{cheese}"
-  #                                        puts "element = #{element}"
-  #                                      end
-                puts "cheese = #{cheese} i  #{{i}}"
+  cheese_found =  ingredients.collect do |element| if cheese_types.include?(element) = true
+                                                      puts "fffffffffffff"
+                                                     end
 
-                              end
-                            end
+  end
+  puts "cheese_found #{cheese_found}"
+
 end
 find_the_cheese(ingredients)
 
