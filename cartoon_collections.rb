@@ -1,16 +1,19 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(list)
+  index = 1
+  list.each do |dwarf|
+    puts "#{index}. #{dwarf}"
+    index+=1
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(list)
+  list.collect {|element| "#{element.capitalize}!"}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(list)
+  list.any? {|call| call.length>4}
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+def find_the_cheese(list)
+  list.find(ifnone=nil){|item| item=="cheddar"||item=="gouda"||item=="camembert"}
 end
