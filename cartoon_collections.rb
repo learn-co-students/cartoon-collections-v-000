@@ -1,25 +1,27 @@
 
-require 'pry'
-
-  dwarves = ["Dopey", "Grumpy", "Bashful", "Feodor"]
 def roll_call_dwarves(dwarves)
-  elves.each_with_index(1) do |number, dwarves|
-    puts "#{number}. #{dwarves}"
-    binding.pry
+  dwarves.each.with_index(1) do |dwarf, index|
+    puts "#{index}. #{dwarf}"
   end
 end
 
 
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.collect {|elements|"#{elements}!".capitalize}
+end
+  
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def long_planeteer_calls(planeteer_calls)
+ planeteer_calls.any? {|word| word.length > 4}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+
+
+def find_the_cheese(possibly_cheese)
+cheese_types = ["cheddar", "gouda", "camembert"]
+
+possibly_cheese.find do |cheese|
+  cheese_types.include?(cheese)
+end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
-end

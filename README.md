@@ -1,6 +1,8 @@
 ## Cartoon Collections
 
 ## Objectives
+Full Screen
+
 
 1. Get familiar iterating through arrays with enumerator methods like `.collect` or `.map`, `.find`, and `.include`. 
 2. Build methods and control their return values.
