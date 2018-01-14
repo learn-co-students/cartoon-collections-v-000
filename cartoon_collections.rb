@@ -19,8 +19,7 @@ end
 def find_the_cheese(snacks)
    cheese_types = %w[cheddar gouda camembert]
 
-   snacks.any? do |snack|
+   snacks.find do |snack|
       return snack if cheese_types.include?(snack)
    end
-   nil
 end
