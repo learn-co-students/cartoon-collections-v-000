@@ -104,12 +104,12 @@ find_the_cheese(ingredients)
 #=> nil
 ```
 
-You can assume that all strings will be lowercase. Take a look at the [`.include`](http://ruby-doc.org/core/Array.html#method-i-include-3F) method for a hint. This method asks you to return a string value instead of printing it so keep that in mind.
+You can assume that all strings will be lowercase. Take a look at the [`.include?`](http://ruby-doc.org/core/Array.html#method-i-include-3F) method for a hint. This method asks you to return a string value instead of printing it so keep that in mind.
 
 ## Resources
 
 * The [`.each_with_index` method](http://ruby-doc.org/core/Enumerable.html#method-i-each_with_index)
 * The [`.map` method](http://ruby-doc.org/core/Array.html#method-i-map)
-* The [`.include` method](http://ruby-doc.org/core/Array.html#method-i-include-3F)
+* The [`.include?` method](http://ruby-doc.org/core/Array.html#method-i-include-3F)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/cartoon-collections'>Cartoon Collections Lab</a> on Learn.co and start learning to code for free.</p>
