@@ -1,5 +1,5 @@
 require "spec_helper"
-
+require 'pry'
 describe "Cartoon Collections" do
   describe "#roll_call_dwarves" do
     it "prints out the 7 dwarfs in a numbered list" do
