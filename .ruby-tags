@@ -1,0 +1,11 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+capture_stdout	spec/spec_helper.rb	/^def capture_stdout(&block)$/;"	f
+find_the_cheese	cartoon_collections.rb	/^def find_the_cheese(food_list)$/;"	f
+long_planeteer_calls	cartoon_collections.rb	/^def long_planeteer_calls(calls)$/;"	f
+roll_call_dwarves	cartoon_collections.rb	/^def roll_call_dwarves(dwarves)$/;"	f
+summon_captain_planet	cartoon_collections.rb	/^def summon_captain_planet(planeteers)$/;"	f
