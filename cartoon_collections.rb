@@ -5,32 +5,22 @@ puts "#{index+1}. #{roll}"
 end
 end
 
+
 def summon_captain_planet(planeteer)# code an argument here
   planeteer_calls = []
-planeteer.collect! do |planeteers|
-  planeteer
+planeteer.collect! do |planeteers| planeteers.capitalize + "!"
 end
 end
 
 def long_planeteer_calls(four) # code an argument here
- i = 0 
- while i < four.length
- return four[i] if yield(four[i])
+four.any? do |four| four.length > 4
 end
 end
 
 def find_the_cheese(cheese)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0 
-  while i < cheese.length
-  cheese_types << yield(cheese[i])
-  i = i + 1
-end
-if cheese_types.include?(cheese)
-   cheese
- else
-   nil
+cheese.find do |cheese |
+   cheese_types.include?(cheese)
  end
  end
-  
