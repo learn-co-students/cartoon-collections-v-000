@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "Cartoon Collections" do
+puts describe "Cartoon Collections" do
   describe "#roll_call_dwarves" do
     it "prints out the 7 dwarfs in a numbered list" do
       dwarves = ["Dopey", "Grumpy", "Bashful"]
@@ -17,7 +17,7 @@ describe "Cartoon Collections" do
     end
   end
 
-  describe "#summon_captain_planet" do
+  puts describe "#summon_captain_planet" do
     it "returns an array with the same number of elements that it was given" do
       veggies = ["carrot", "cucumber", "pepper"]
       result = summon_captain_planet(veggies)
