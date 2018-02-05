@@ -9,22 +9,28 @@ def summon_captain_planet(arr)
      "#{ele.capitalize}!"
   end
 end
+#
+# def long_planeteer_calls(arr)
+#   coll = []
+#   i = 0
+#   while i < arr.length
+#     if arr[i].length > 4
+#       coll << true
+#     else
+#       coll << false
+#     end
+#     i += 1
+#   end
+#   if coll.include?(true)
+#     return true
+#   else
+#     false
+#   end
+# end
 
 def long_planeteer_calls(arr)
-  coll = []
-  i = 0
-  while i < arr.length
-    if arr[i].length > 4
-      coll << true
-    else
-      coll << false
-    end
-    i += 1
-  end
-  if coll.include?(true)
-    return true
-  else
-    false
+  arr.any? do |call|
+    call.length > 4
   end
 end
 
