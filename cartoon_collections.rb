@@ -20,15 +20,15 @@ def find_the_cheese(cheeses)
       cheese_types.include?(cheese)
     end
 end
+
+#Different soluttion for find_the_cheese
   #cheese_types.each do |cheese|
       #if cheeses.include?(cheese)
       #   return cheese
       #else
       #  return nil
       #end
-
-
-#Different soluttion for find_the_cheese
+#Alternate
     #cheese_types.find do |cheese|
     #cheese.include?(cheese)
     #end
