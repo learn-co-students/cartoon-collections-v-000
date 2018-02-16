@@ -1,13 +1,16 @@
+#method_1: roll calls dwarves
 def roll_call_dwarves(dwarves)
   dwarves.each_with_index do |name, index|
     puts "#{index+1}. #{name}"
   end
 end
 
+#method_2: modified original array items and returns them in new array
 def summon_captain_planet(planeteer_calls)
   return planeteer_calls.collect {|planeteer| "#{planeteer.capitalize}!"}
 end
 
+#method_3: checks is an array contains strings longer than 4 characters
 def long_planeteer_calls(planeteer_calls)
   if planeteer_calls.find {|planeteer_call| planeteer_call.length > 4}
     return true
@@ -36,6 +39,7 @@ end
 
 =end
 
+#method_4: checks if a cheese_type is present in an array of "stuff"
 def find_the_cheese(stuff)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
