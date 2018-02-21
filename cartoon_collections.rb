@@ -1,3 +1,5 @@
+require 'pry'
+
 def roll_call_dwarves(dwarf_name_array)
   dwarf_name_array.collect do |name|
     index_plus_1 = dwarf_name_array.index(name) + 1
@@ -12,21 +14,7 @@ def summon_captain_planet(fruit)
 end
 
 def long_planeteer_calls(array)
-
-  array.find do |i|
-    if i.length > 4
-      true
-    else
-      false
-    end
-  end
-
-  if array.length > 4
-    true
-  else
-    false
-  end
-
+  array.any? { |word| word.length > 4 }
 end
 
 def find_the_cheese(array)
