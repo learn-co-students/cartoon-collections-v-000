@@ -14,9 +14,7 @@ end
 
 def long_planeteer_calls(planeteer_calls)
   planeteer_calls.each do |call|
-    if call.length > 4
-      return true
-    end
+    return true if call.length > 4
   end
   return false
 end
@@ -24,9 +22,7 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   array.each do |var|
-    if cheese_types.include?(var)
-      return var
-    end
+    return var if cheese_types.include?(var)
   end
   return nil
 end
