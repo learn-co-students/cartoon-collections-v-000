@@ -25,5 +25,5 @@ def find_the_cheese(foods)# code an argument here
       return food
     end
   end
-  nil
+  nil #returns nil if not returned out of the if block.
 end
