@@ -22,14 +22,13 @@ end
 def find_the_cheese(food)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-
-  #if food.include?("cheddar")
-  #  "cheddar"
-    if food.include?(cheese_types[0])
-      cheese_types[0]
-    elsif food.include?(cheese_types[1])
-      cheese_types[1]
-    elsif food.include?(cheese_types[2])
-      cheese_types[2]
-  end
+  food.find { |f| cheese_types.include?(f) }
+## initial code to pass lab below refactored to rb: 25
+#    if food.include?(cheese_types[0])
+#      cheese_types[0]
+#    elsif food.include?(cheese_types[1])
+#      cheese_types[1]
+#    elsif food.include?(cheese_types[2])
+#      cheese_types[2]
+#  end
 end
