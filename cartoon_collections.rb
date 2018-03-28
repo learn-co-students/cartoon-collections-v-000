@@ -29,7 +29,7 @@ def find_the_cheese(array)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   if array.find{|i| i == "cheddar"}
     return "cheddar"
-  elsif array.find{|i| i == "gouda"}
+  elsif array.find{|i| i == "gouda"}#ternary doesn't work because it's not binary
     return "gouda"
   elsif array.find{|i| i == "camembert"}  #still works the same no need for ==
     return "camembert"
