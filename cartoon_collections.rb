@@ -1,5 +1,9 @@
-def roll_call_dwarves# code an argument here
+dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"]
+def roll_call_dwarves(dwarves)# code an argument here
   # Your code here
+  dwarf_hash = Hash.new
+  dwarves.each_with_index { |dwarf, index| dwarf_hash[dwarf] = index+1 }
+  #puts dwarf_hash.index + ". " + dwarf_hash.dwarf
 end
 
 def summon_captain_planet# code an argument here
