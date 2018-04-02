@@ -1,5 +1,8 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(coll)
+  coll.each_with_index do |e, i|
+    place = i + 1
+    puts place.to_s + ". " + e.to_s
+  end
 end
 
 def summon_captain_planet# code an argument here
