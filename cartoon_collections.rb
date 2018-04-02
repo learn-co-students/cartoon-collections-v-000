@@ -5,15 +5,37 @@ def roll_call_dwarves(coll)
   end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(coll)
+  rtn = []
+  coll.collect do |e|
+    r = e + "!"
+    len = r.size
+    right = r.slice(1, len-1)
+    left = r.slice(0,1)
+    left = left.upcase
+    
+    r = left + right
+    rtn << r
+  end
+  rtn
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(coll, len = 4)
+  rtn = coll.any? do |e|
+    e.size > len 
+  end
+  
+  rtn
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(coll)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+
+  coll.each_with_index do |e, i|
+    if cheese_types.include(e)
+      return e
+    end
+  end
+  nil
 end
