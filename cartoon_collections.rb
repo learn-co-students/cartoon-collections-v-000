@@ -33,7 +33,7 @@ def find_the_cheese(coll)
   cheese_types = ["cheddar", "gouda", "camembert"]
 
   coll.each_with_index do |e, i|
-    if cheese_types.include(e)
+    if cheese_types.include?(e)
       return e
     end
   end
