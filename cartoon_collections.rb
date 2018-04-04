@@ -20,7 +20,12 @@ calls_long.any?  do|calls|
   calls_long.length > 4
 end
 end
-def find_the_cheese# code an argument here
+def find_the_cheese(cheese_types)# code an argument here
   # the array below is here to help
+  i = 0
   cheese_types = ["cheddar", "gouda", "camembert"]
+  while i < cheese_types.length
+    return cheese_types[i] if array.include?(cheese_types[i])
+    i += 1
+end
 end
