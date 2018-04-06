@@ -21,15 +21,23 @@ def long_planeteer_calls(calls)
   end 
 end
 
-def find_the_cheese(foods)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  matches = []
-  fl = foods.length
-  hash = Hash.new
-    foods.each_with_index {|item, index| hash[item] = index}
-    fl.times do
-      hash.each_key {|key| if cheese_types.include?(key)
-      matches << key end}
-    end
-  return matches[0]
+def find_the_cheese(potentially_cheesy_items)
+  cheeses = %w(gouda cheddar camembert)
+	
+  potentially_cheesy_items.find do |maybe_cheese|
+    cheeses.include?(maybe_cheese)
+  end
 end
+
+# def find_the_cheese(foods)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   matches = []
+#   fl = foods.length
+#   hash = Hash.new
+#     foods.each_with_index {|item, index| hash[item] = index}
+#     fl.times do
+#       hash.each_key {|key| if cheese_types.include?(key)
+#       matches << key end}
+#     end
+#   return matches[0]
+# end
