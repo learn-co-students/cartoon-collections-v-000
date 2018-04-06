@@ -1,16 +1,29 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+require 'pry'
+def roll_call_dwarves(dwarves)
+  i = 0
+  dwarves.collect do |dwarf|
+    i +=1
+    puts "#{i}. #{dwarf}"
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(calls)
+  calls.collect do |call|
+    call.capitalize + "!"
+  end
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)
+    if calls.any? do |call|
+      call.length > 4
+    end
+      return true
+    else
+      false
+    end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(list)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  list.find {|item| cheese_types.include?(item)}
 end
