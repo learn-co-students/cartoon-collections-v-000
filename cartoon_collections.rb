@@ -17,7 +17,8 @@ return false
   end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(arr)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
+arr.find{|i|i == cheese_types.find{[j]}}
+
 end
