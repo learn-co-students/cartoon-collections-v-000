@@ -1,9 +1,11 @@
 def roll_call_dwarves# code an argument here
   # Your code here
+  each_with_index
 end
 
 def summon_captain_planet# code an argument here
   # Your code here
+  .map
 end
 
 def long_planeteer_calls# code an argument here
