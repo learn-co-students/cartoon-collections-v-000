@@ -17,7 +17,7 @@ def long_planeteer_calls(array)
   end
     if collection.any?{|i| i > 4}
       true
-    elsif  collection.all?{|i| i < 4}
+    elsif  collection.all?{|i| i <= 4}
     return false
   end
 end
