@@ -17,4 +17,5 @@ end
 def find_the_cheese(foods)
   cheese_types = ["cheddar", "gouda", "camembert"]
   foods.detect { |food| cheese_types.any? {|cheese| cheese == food}}
+  #this seems like a confusing way to do this, is there something that would be clearer?
 end
