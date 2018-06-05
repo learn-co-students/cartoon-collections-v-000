@@ -4,13 +4,14 @@ def roll_call_dwarves(dwarves)
   end
 end
 
-
-def summon_captain_planet(planeteer_calls)
-  
+def summon_captain_planet(array)
+  array.map! { | element | element.capitalize + "!"} 
+  return array
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls_long)
+  calls_long.include? { | element | array.length > 4} 
+  return element
 end
 
 def find_the_cheese# code an argument here
