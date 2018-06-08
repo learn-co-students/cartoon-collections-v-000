@@ -6,10 +6,10 @@ end
 
 
 def summon_captain_planet(planeteer_calls)
-planeteer_calls.collect do |name|
-name = name + "!"
-name.capitalize!
-end
+  planeteer_calls.collect do |name|
+    name = name + "!"
+    name.capitalize!
+  end
 end
 
 def long_planeteer_calls(calls)
@@ -22,18 +22,10 @@ end
 
 def find_the_cheese(snacks)
 cheese_types = ["cheddar", "gouda", "camembert"]
-cheese_types.each do |x|
-  snacks.include?(x)
-  return x
-end
-end
-
-
-
-=begin
- if snacks.include?("cheddar")
- elsif snacks.include?("gouda")
- elsif snacks.include?("camembert")
- else nil
+  snacks.each do |x|
+    if cheese_types.include?(x)
+    return x
+    end
   end
-=end
+ nil
+end
