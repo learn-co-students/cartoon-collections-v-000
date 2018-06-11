@@ -4,15 +4,14 @@ def roll_call_dwarves(dwarves)
 end
 end
 
-def summon_captain_planet(planeteer_calls)
+def summon_captain_planet(calls)
   i = 0
-  while i < planateer_calls.length
-  split = planeteer_calls[i].split
-  split = split.first.upcase
-  split << "!"
-  planateer_calls[i] = split.join
+  while i < calls.length
+  calls[i].capitalize
+  calls << "!"
   i += 1
 end
+return calls
 end
 
 def long_planeteer_calls# code an argument here
