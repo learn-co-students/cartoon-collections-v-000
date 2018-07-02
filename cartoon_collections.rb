@@ -19,6 +19,6 @@ end
 def find_the_cheese(string)# code an argument here
   cheese = ["cheddar", "gouda", "camembert"]
   string.find do |words|
-    words == cheese[0] || words == cheese[1] ||words == cheese[2]
+    cheese.include?(words)
   end
 end
