@@ -24,12 +24,16 @@ end
  #}
  #return false
  #end
-#cheese_types = ["cheddar", "gouda", "camembert"]
-#def find_the_cheese(return_cheese)
-#  return_cheese.find { |i| i == "cheddar" || i == "gouda" || i == "camembert" }
-#  end
 
-  def find_the_cheese(return_cheese)
-    cheese_types = ["cheddar", "gouda", "camembert"]
-    return_cheese.find { |cheese| cheese_types.include?(cheese) }
-    end
+ #Using .find
+ #cheese_types = ["cheddar", "gouda", "camembert"]
+def find_the_cheese(return_cheese)
+  return_cheese.find { |i| i == "cheddar" || i == "gouda" || i == "camembert" }
+  end
+
+
+# Using .include?
+#  def find_the_cheese(return_cheese)
+#    cheese_types = ["cheddar", "gouda", "camembert"]
+#    return_cheese.find { |cheese| cheese_types.include?(cheese) }
+#    end
