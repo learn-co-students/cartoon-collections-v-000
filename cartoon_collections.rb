@@ -13,8 +13,12 @@ def summon_captain_planet(planeteer_calls)
   end
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)
+  if calls.length > 4
+    true
+  else 
+    false
+  end
 end
 
 def find_the_cheese# code an argument here
