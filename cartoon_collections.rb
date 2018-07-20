@@ -26,7 +26,6 @@ def find_the_cheese(ingredients)
 end
 
      
- 
 
 def assign_rooms(attendees)
   arr = []
