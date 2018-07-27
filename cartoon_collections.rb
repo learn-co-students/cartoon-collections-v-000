@@ -11,6 +11,7 @@ def summon_captain_planet(planeteer_calls)
   planeteer_calls.map! { |call| call.capitalize }
   planeteer_calls.map! { |call| new_calls << "#{call}!" }
   new_calls
+  # Or just: planeteer_calls.map { |call| call.capitalize + "!" }
 end
 
 def long_planeteer_calls(planeteer_calls)
@@ -26,3 +27,12 @@ def find_the_cheese(possible_cheese)
     end
   end
 end
+
+# Better answer to cheese
+# def find_the_cheese(potentially_cheesy_items)
+#   cheeses = %w(gouda cheddar camembert)
+#
+#   potentially_cheesy_items.find do |maybe_cheese|
+#     cheeses.include?(maybe_cheese)
+#   end
+# end
