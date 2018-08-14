@@ -8,7 +8,8 @@ end
 
 def summon_captain_planet(planeteer_calls)
   
-  planeteer_calls.map { |powers_combined| puts powers_combined.upcase + "!"}
+  planeteer_calls.map { |powers_combined| 
+  powers_combined.capitalize +  "!"}
   
 end     
 
