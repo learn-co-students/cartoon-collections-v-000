@@ -9,15 +9,8 @@ end
 end
 
 def long_planeteer_calls(calls)
-  return true if calls.length > 4
-else
-false
+calls.any? {|chant| chant > 4}
 end
 
 def find_the_cheese(cheddar_cheese)
-  if cheddar_cheese.include?("cheddar")
-  return "cheddar"
-else
-  nil
-end
 end
