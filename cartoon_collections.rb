@@ -13,9 +13,8 @@ calls.any? {|chant| chant.length > 4}
 end
 
 def find_the_cheese(cheese_type)
-  cheese_type.find do |cheese|
-    if "#{cheese}" == "cheddar" || "#{cheese}" == "gouda"
-"#{cheese}"
-end
+cheeses = ["gouda", "cheddar", "camembert"]
+cheese_type.find do |cheese|
+cheeses.include?(cheese)
 end
 end
