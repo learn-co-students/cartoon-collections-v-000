@@ -17,5 +17,7 @@ end
 def find_the_cheese(cheddar_cheese)
   if cheddar_cheese.include?("cheddar")
   return "cheddar"
+else
+  nil
 end
 end
