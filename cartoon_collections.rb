@@ -9,8 +9,13 @@ end
 end
 
 def long_planeteer_calls(calls)
-calls.any? {|chant| chant > 4}
+calls.any? {|chant| chant.length > 4}
 end
 
-def find_the_cheese(cheddar_cheese)
+def find_the_cheese(cheese_type)
+  cheese_type.find do |cheese|
+    if "#{cheese}" == "cheddar" || "#{cheese}" == "gouda"
+"#{cheese}"
+end
+end
 end
