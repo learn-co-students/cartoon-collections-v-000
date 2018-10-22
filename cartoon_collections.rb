@@ -1,23 +1,29 @@
-def roll_call_dwarves(dwarves)
-  i = 0
-  dwarves.each do |dwarves|
-    puts "#{i + 1}. #{dwarves}"
-  i += 1
+def roll_call_dwarves(array)
+  dwarf_name_list = ""
+  array.each.with_index(1) do |name, position|
+    dwarf_name_list << "#{position}. #{name}"
   end
-  dwarves
+  print  dwarf_name_list
 end
 
-def summon_captain_planet(planeteer_calls)
-  candy = planeteer_calls.collect do |word|
-    word.capitalize + "!"
+def summon_captain_planet(array)
+  capital = []
+  array.collect do |name|
+    capital << (name.capitalize + "!")
   end
-  candy
+  capital
 end
 
 def long_planeteer_calls(calls)
-  calls.any?{|i| i.length > 4}
+  if calls.length >= 4
+    true
+  else
+    false
+  end
+
 end
 
 def find_the_cheese(array)
-  array.detect{|item| item.include?("cheddar" || "gouda" || "camembert")}
+  cheeses = ["cheddar", "gouda", "camembert"]
+  array.detect { |maybe_cheese| cheeses.include?(maybe_cheese)}
 end
