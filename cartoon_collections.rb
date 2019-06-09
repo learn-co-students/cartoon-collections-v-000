@@ -1,9 +1,5 @@
 def roll_call_dwarves(list)
-  index = 1
-  list.each do |dwarf|
-    puts "#{index}. #{dwarf}"
-    index+=1
-  end
+  list.each_with_index {|dwarf,index| puts "#{index+1}. #{dwarf}"}
 end
 
 def summon_captain_planet(list)
@@ -15,5 +11,5 @@ def long_planeteer_calls(list)
 end
 
 def find_the_cheese(list)
-  list.find(ifnone=nil){|item| item=="cheddar"||item=="gouda"||item=="camembert"}
+  list.find{|item| item=="cheddar"||item=="gouda"||item=="camembert"}
 end
