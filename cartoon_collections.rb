@@ -6,12 +6,7 @@ end
 end
 
 def summon_captain_planet(array)
-element_up = []
-element_up_mark = []
-  array.each do |element|
-    element_up << element.capitalize
-    element_up.each do |elements|
-      element_up_mark << elements.join(!)
+array.map { |element| puts element.upcase "!" }
 end
 end
 array
