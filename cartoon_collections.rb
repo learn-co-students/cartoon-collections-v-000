@@ -6,18 +6,21 @@ end
 end
 
 def summon_captain_planet(array)
-array.map { |element| puts element.upcase "!" }
-end
-end
-array
+array.each{|i| i.capitalize! << "!"}
+return array
 end
 
-
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)
+if calls.any? { |call| call.length > 4}
+  return true
+elsif calls.all? { |call| call.length <= 4}
+  return false
+end
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(cheese) # code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese.find { |e| cheese_types.include?(e)}
+
 end
