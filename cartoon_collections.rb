@@ -1,32 +1,20 @@
+require 'pry'
+
 def roll_call_dwarves(dwarves)
-  dwarves.each.with_index(1) do |dwarf, index|
-    puts "#{index}. #{dwarf}"
+  dwarves.each_with_index do |dwarf, index|
+    puts "#{index + 1}. #{dwarf}"
   end
 end
 
-# def roll_call_dwarves(roll_call)
-#   i = 0
-#   while i < roll_call.length
-#     puts "#{i + 1}. #{roll_call[i]}"
-#     i += 1
-#   end
-# end
-
-def summon_captain_planet(summoning_words)
-  summoning_words.map do |word|
-    "#{word.capitalize}" + "!"
-  end
+def summon_captain_planet(planeteer_calls)
+  planeteer_calls.map { |call| call.capitalize + '!'}
 end
 
-# assorted_words = ["two", "go", "industrious", "bop"]
-def long_planeteer_calls(assorted_words)
-  assorted_words.any? { |word| word.length > 4 }
+def long_planeteer_calls(planeteer_calls)
+  planeteer_calls.any? {|call| call.length > 4}
 end
 
-def find_the_cheese(food)
-  cheese_types = %w(cheddar gouda comembert)
-
-  food.find do |maybe_cheese|
-    cheese_types.include?(maybe_cheese)
-  end
+def find_the_cheese(snacks)
+  cheeses = ["cheddar", "gouda", "camembert"]
+    snacks.find {|snack| cheeses.include?(snack)}
 end
